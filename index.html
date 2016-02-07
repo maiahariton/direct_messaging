@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Direct Messaging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="phone">
+    <div class="screen">
+        <div class="messages">
+            <ul>
+                <li class="message sent">
+                    <p>Oh hi</p>
+                    <time>14:32</time>
+                </li><!-- End of Message -->
+
+                <li class="message recieved">
+                    <p>Hello</p>
+                    <time>15:23</time>
+                </li><!-- End of Message -->
+
+                <li class="message sent">
+                    <p>What's up</p>
+                    <time>14:32</time>
+                </li><!-- End of Message -->
+
+                <li class="message recieved">
+                    <p>Nothing much :)</p>
+                    <time>15:23</time>
+                </li><!-- End of Message -->
+
+            </ul>
+
+            <div class="message input">
+                <textarea name="inputMessage" placeholder="type a text message" cols="1" rows="1"></textarea>
+            </div>
+        </div>
+    </div><!-- End of Messages -->
+
+    <div class="form">
+        <!--<button>Send</button>-->
+        <a class="send_button action-button shadow animate red">SEND</a>
+    </div><!-- End of Form -->
+</div>
+<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="direct_messaging.js"></script>
+</body>
+</html>

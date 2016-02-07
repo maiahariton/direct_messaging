@@ -1,0 +1,152 @@
+body {
+    font-size: 0.8em;
+    color: white;
+    background: black;
+    margin: 0;}
+
+.phone {
+    max-height: 500px;
+    min-height: 400px;
+    background: black;
+    border: 1px solid #FF6F00;
+    border-bottom: 50px solid #FF6F00;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    width: 300px;
+    top: 20px;
+    bottom: 2px;
+    margin-left: -150px;}
+
+.screen {
+    overflow: hidden;
+    position: absolute;
+    width: 92%;
+    margin: 0 4%;
+    top: 50px;
+    bottom: 56px;
+}
+
+.messages {
+    word-wrap: break-word;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.phone ul {
+    list-style: none;
+    padding: 0;}
+
+.phone .message {
+    width: 70%;
+    position: relative;
+    margin: 10px 0;
+    padding-bottom: 1.5em;}
+
+/* Message Triangles */
+.phone .message.recieved {
+    background: #FF6F00;
+    border-color: #FF6F00;
+    float: left;}
+
+.phone .message.sent {
+    background: #FFA000;
+    border-color: #FFA000;
+    float: right;}
+
+.phone .message:after {
+    content:"";
+    width: 0;
+    height: 0;
+    position: absolute;}
+
+.phone .message.recieved:after {
+    border-bottom: 10px solid #FFA000;
+    border-right: 10px solid transparent;
+    top: -10px;
+    left: 10px;}
+
+.phone .message.sent:after {
+    border-top: 10px solid #FFA000;
+    border-left: 10px solid transparent;
+    bottom: -10px;
+    right: 10px;}
+/* End of Message Triangles*/
+
+/* Message Contents*/
+.phone .message p {
+    margin: 0;
+    padding: 6px}
+
+.phone .message time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 6px;
+    font-size: 0.8em;
+    color: #aee;}
+/* End of Message Contents*/
+
+/* Text Area*/
+.phone .message.input {
+    background: #fff;
+    float: right;
+    padding-bottom: 0;
+    height: 2em;}
+
+.phone .message.input:after {
+    border-top: 10px solid #fff;
+    border-left: 10px solid transparent;
+    bottom: -10px;
+    right: 10px;}
+
+.phone textarea {
+    border: 0;
+    width: 98%;
+    height: 70%;
+    outline: none;
+    resize: none;
+    margin: 0 auto;
+}
+/* End of Text Area*/
+.form {
+    position: absolute;
+    bottom:10px;
+    height: 34px;
+    background: #111;
+    width: 92%;
+    margin: 0 4%;
+    text-align: center;
+}
+.send_button {
+    height: 10px;
+    width: 10px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.red
+{
+    background-color: #FFCA28;
+    border-bottom: 5px solid #FFCA28;
+    text-shadow: 0 -2px #FFC107;
+}
+
+.animate
+{
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+    position: relative;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+    border-radius: 10px;
+    top: 6px;
+    font-size: 10px;
+    color: #FFF;
+    text-decoration: none;
+}
